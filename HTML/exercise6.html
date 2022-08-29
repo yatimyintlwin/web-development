@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>The Sun Training School</h1>
+
+    <form>
+
+        <label for="name">Your Name:</Label>
+        <input type="text" id="name" placeholder="Enter Your Name"> <br> <br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" placeholder="Enter Your Email"> <br> <br>
+
+        <label for="gender">Your Gender:</label>
+        <input type="radio" id="Male" name="Gender" value="Male" checked>
+        <label for="Male">Male</label>
+
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female">Female</label> <br> <br>
+
+        <label for="education">Your Education</label>
+        <input type="checkbox" id="Graduted">
+        <label for="Graduted">Graduted</label>
+
+        <input type="checkbox" id="High School" checked>
+        <label for="High School">High School</label>
+
+        <input type="checkbox" id="Primary School">
+        <label for="Primary School">Primary School</label> <br> <br>
+
+        <label for="Choose Training">Choose Training:</label>
+        <select id="Choose Training">
+            
+            <optgroup label="Available Trainings">
+                <option>Computer Basic</option>
+                <option selected>MS Office</option>
+                <option>Advanced Excel</option>
+                <option>English 4 Skills</option>
+                <option>LCCI</option>
+            </optgroup>
+
+        </select> <br> <br>
+
+        <label for="reasion">Why you want to attend this class:</label> <br>
+        <textarea id="reasion"></textarea> <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

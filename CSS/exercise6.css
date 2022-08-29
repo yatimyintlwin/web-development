@@ -1,0 +1,141 @@
+body {
+  background-color: black;
+  font-family: "Raleway", sans-serif;
+  color: #f2a900;
+}
+
+#background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+#content {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 13px 80px 13px;
+  text-align: center;
+  color: white;
+  letter-spacing: 4px;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 40px;
+}
+
+.logowarp img {
+  margin: 250px auto;
+  margin-bottom: 100px;
+  width: 70%;
+  height: auto;
+}
+
+.release h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2em;
+  font-weight: 200;
+}
+
+.release .shop-icons {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.shop-icons a {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.shop-icons a:hover {
+  color: #f2a900;
+}
+
+.button {
+  display: block;
+  width: 250px;
+  margin: 10px auto;
+  color: #f2a900;
+  padding: 10px 50px;
+  border: 1px solid #f2a900;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: aliceblue;
+  color: dimgrey;
+}
+
+.flyer img {
+  margin: 10px auto;
+  width: 55%;
+  min-width: 600px;
+}
+
+#invitation {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#invitation h1,
+#invitation a {
+  color: #f2a900;
+}
+
+#oh-my-god {
+  margin-top: 100px;
+}
+
+.album img {
+  width: 95%;
+  max-width: 600px;
+  display: block;
+  margin: 60px auto;
+}
+
+.video-player {
+  position: relative;
+}
+
+.video-player i {
+  position: absolute;
+  color: #f2a90069;
+  font-size: 3em;
+  cursor: pointer;
+  top: 45%;
+  left: 50%;
+}
+
+.video-player i:hover {
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: #f2a900;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}

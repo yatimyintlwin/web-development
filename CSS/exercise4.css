@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+footer {
+  height: 10%;
+  background-color: #01008a;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+}
+
+nav,
+aside {
+  flex-grow: 1;
+  background-color: gainsboro;
+}
+
+main {
+  flex-grow: 8;
+  background-color: lavenderblush;
+}

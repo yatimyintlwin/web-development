@@ -1,0 +1,51 @@
+.box {
+    width: 600px;
+    height: 400px;
+    background: url('../images/home.jpg');
+    border-radius: 20px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.box2 {
+    margin-top: 30px;
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(45deg, cyan, green);
+    border-radius: 20px;
+}
+
+@font-face {
+    font-family: SquarePeg;
+    src: url('../fonts/SquarePeg-Regular.ttf');
+}
+
+.one {
+    font-family: SquarePeg, Courier, monospace;
+    text-decoration: double;
+}
+
+.two {
+    font-family: Gigi, 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    margin: 20px;
+    width: 300px;
+    background: burlywood;
+    padding: 20px;
+    text-align: right;
+}
+
+.three {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+}
+
+.five {
+    line-height: 2em;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.four {
+    list-style: georgian;
+}

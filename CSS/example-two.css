@@ -1,0 +1,24 @@
+ul > li {
+    padding: 20px;
+    border: 10px solid red;
+}
+
+a {
+    color: blue;
+}
+
+a:visited {
+    color: brown;
+}
+
+.example:hover {
+    color: red;
+}
+
+.example:active{
+    color: darkcyan;
+}
+
+#servers {
+    color: green !important;
+}
