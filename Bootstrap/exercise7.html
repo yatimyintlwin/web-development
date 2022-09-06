@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 7</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="dropdown mb-5">
+      <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+        Send Now
+      </button>
+
+      <ul class="dropdown-menu dropdown-menu-dark">
+        <li><a href="#" class="dropdown-item">Send Now</a></li>
+        <li><a href="#" class="dropdown-item">Save Draft</a></li>
+        <li class="dropdown-divider"></li>
+        <li><a href="#" class="dropdown-item">Preview</a></li>
+      </ul>
+    </div>
+
+    <p>
+      <a class="btn btn-primary" data-bs-toggle="collapse" href="#item">
+        Link Button</a
+      >
+    </p>
+
+    <div class="collapse" id="item">
+      <div class="card card-body">
+        <h5 class="card-title"></h5>
+        <p>Some sample content</p>
+      </div>
+    </div>
+
+    <button
+      class="btn btn-primary mt-5"
+      data-bs-toggle="modal"
+      data-bs-target="#feedback"
+    >
+      Show Modal
+    </button>
+    <dav class="modal fade" id="feedback">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Feedback</h5>
+            <button class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <textarea class="form-control"></textarea>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary">Send Feedback</button>
+          </div>
+        </div>
+      </div>
+    </dav>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
