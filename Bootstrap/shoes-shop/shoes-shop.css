@@ -1,0 +1,14 @@
+.header-font {
+  font-family: "Oleo Script", cursive;
+  font-size: 2.5em !important;
+  -webkit-text-stroke: 1px #e049f9;
+  font-weight: bold;
+}
+
+.nav-color {
+  background: linear-gradient(243deg, #13ddea, #16bdf2);
+}
+
+.showcase {
+  height: 333px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Shoes Shop</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="shoes-shop.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top nav-color">
+      <div class="container-fluid">
+        <a href="#" class="header-font text-light navbar-brand"
+          >My Shoes Shop</a
+        >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Image slider -->
+    <main>
+      <div class="carousel slide" data-bs-ride="carousel" id="slide">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#slide" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#slide" data-bs-slide-to="1"></li>
+          <li data-bs-target="#slide" data-bs-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./images/shoes1.png"
+              alt="Shoes Showcase One"
+              class="showcase"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/shoes2.png"
+              alt="Shoes Showcase Two"
+              class="showcase"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./images/shoes3.png"
+              alt="Shoes Showcase Three"
+              class="showcase"
+            />
+          </div>
+        </div>
+
+        <a href="#slide" class="carousel-control-prev" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a href="#slide" class="carousel-control-next" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
