@@ -1,3 +1,8 @@
+body {
+  background-color: #272727 !important;
+  color: white !important;
+}
+
 .header-font {
   font-family: "Oleo Script", cursive;
   font-size: 2.5em !important;
@@ -6,9 +11,30 @@
 }
 
 .nav-color {
-  background: linear-gradient(243deg, #13ddea, #16bdf2);
+  background: linear-gradient(86deg, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0.25));
 }
 
 .showcase {
   height: 333px;
+}
+
+.shoe-one-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 20px 0;
+}
+
+.shoe-one-content {
+  width: 650px;
+  text-align: center;
+  padding: 50px;
+}
+
+.shoe-one-image {
+  text-align: center;
+}
+
+.shoe-one-image img {
+  width: 100%;
 }
