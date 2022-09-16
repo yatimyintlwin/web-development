@@ -18,23 +18,54 @@ body {
   height: 333px;
 }
 
-.shoe-one-container {
+.shoe-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px 0;
 }
 
-.shoe-one-content {
+.shoe-content {
   width: 650px;
   text-align: center;
   padding: 50px;
 }
 
-.shoe-one-image {
+.shoe-image {
   text-align: center;
 }
 
-.shoe-one-image img {
+.shoe-image img {
   width: 100%;
+}
+
+.shoes-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.shoes-wrapper td {
+  text-align: center;
+  border-width: 10px;
+  border-color: transparent;
+}
+
+.shoes-wrapper h1 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 2em;
+}
+
+.shoes {
+  width: 189px;
+  height: 167px;
+}
+
+.github-link {
+  color: #44ecf8 !important;
+  text-decoration: none !important;
+}
+
+.github-link:hover {
+  color: #60f824 !important;
 }
