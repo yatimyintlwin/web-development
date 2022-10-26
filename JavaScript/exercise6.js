@@ -14,34 +14,36 @@ function isOdd(a) {
 console.log(isOdd(13));
 
 function isGreen(a) {
-  return a == "green";
+  return a === "green";
 }
 console.log(isGreen("red"));
 
 function num(a) {
-  return (a > 40 && a < 80) || a == 80;
+  return a > 40 && a <= 80;
 }
-console.log(num(60));
+console.log(num(90));
 
 function calculate(a, b) {
-  return a / b;
+  console.log(`total division of ${a} by ${b} is ${a / b}`);
 }
-console.log(calculate(50, 5));
+calculate(30, 2);
 
-let a = 5;
-console.log(a !== 5);
+function doReverse(a) {
+  console.log(`${!a}`);
+}
+doReverse(10);
 
 function doMagic(a) {
-  return a + 5;
+  console.log(`result is ${a + 5}`);
 }
-console.log(doMagic(2));
+doMagic(2);
 
 function isEven(a) {
-  return a % 2 == 0;
+  return a % 2 === 0;
 }
 console.log(isEven(10));
 
 function color(a) {
-  return a == "green" || a == "blue";
+  return a === "green" || a === "blue";
 }
 console.log(color("red"));
