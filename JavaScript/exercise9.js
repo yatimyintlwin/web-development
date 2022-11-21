@@ -36,3 +36,14 @@ console.log(animals2);
 
 animals2.shift();
 console.log(animals2);
+
+let fruits2 = ["Apple", "Orange", "Mango", "Banana"];
+
+console.log(fruits2.indexOf("Mango"));
+
+console.log(fruits2.splice(3, 1));
+console.log(fruits2);
+
+let fruits3 = ["Apple", "Orange", "Mango"];
+
+console.log(fruits3.join(", "));
