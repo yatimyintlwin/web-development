@@ -83,23 +83,22 @@ color();
 
 // exercise (6)
 
-let planets = [
-  "Mercury",
-  "Venus",
-  "Earth",
-  "Mars",
-  "Jupiter",
-  "Saturn",
-  "Uranus",
-  "Neptune",
-  "Pluto",
-];
-function findPlanet(a) {
-  return a;
+function findPlanetIndex(a) {
+  let planets = [
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Pluto",
+  ];
+  return planets.indexOf(a);
 }
-console.log(findPlanet(planets.indexOf("Earth")));
-
-console.log(findPlanet(planets.indexOf("Neptune")));
+console.log(findPlanetIndex("Earth"));
+console.log(findPlanetIndex("Neptune"));
 
 // exercise (7)
 
@@ -121,30 +120,39 @@ planet();
 
 // exercise (8)
 
-function num() {
-  let nums = [1, 2, 3];
-  console.log(nums.join(" * "));
+function convert(array) {
+  console.log(array.join(" * "));
 }
-num();
+convert([1, 2, 3]);
 
-function fruit() {
-  let fruits = ["apple", "orange"];
-  console.log(fruits.join(" * "));
-}
-fruit();
+convert(["apple", "orange"]);
 
 // exercise (9)
 
-// function myReplace() {
-//   let fruits = ["apples", "oranges", "mango", "carrots", "onions", "brocoli"];
-//   console.log();
-// }
+function myReplace(a, b) {
+  let fruits = ["apples", "oranges", "mango", "carrots", "onions", "brocoli"];
+  let oldValue = fruits.indexOf(a);
+  fruits[oldValue] = b;
+  console.log(fruits);
+}
+myReplace("oranges", "banana");
 
 // exercise (10)
 
 function findPlanetValue(a) {
-  return a;
+  let planets = [
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars",
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune",
+    "Pluto",
+  ];
+  return planets[a];
 }
-console.log(findPlanetValue(planets[4]));
+console.log(findPlanetValue(4));
 
-console.log(findPlanetValue(planets[6]));
+console.log(findPlanetValue(6));
