@@ -1,63 +1,49 @@
-// exercise (1)
+let fruits = ["Apple", "Orange"];
+console.log(fruits.length);
 
-function changeValue() {
-  let originalArray = [100, 200, 300, 400, 500];
+fruits[2] = "Mango";
+console.log(fruits.length);
 
-  let changedArray = originalArray.map((n) => n + " Kyats");
+console.log(fruits[fruits.length - 1]);
 
-  console.log(changedArray);
-}
-changeValue();
+let mix = [
+  [123, 456, 789],
+  ["Ant", "Cat", "Dog"],
+];
 
-// exercise (2)
+let nums = mix[0];
+console.log(nums);
 
-function changedArray() {
-  let originalArray = [2, 4, 6, 8, 10];
+let animals = mix[1];
+console.log(animals);
 
-  let changedArray = originalArray.map((n) => n * 3);
+let x = mix[0][1];
+console.log(x);
 
-  console.log(changedArray);
-}
-changedArray();
+let rambo = mix[1][2];
+console.log(rambo);
 
-// exercise (3)
+let animals2 = ["Dog", "Cat", "Bird"];
 
-function nums() {
-  let nums = [20, 40, 33, 12, 46, 70, 80, 10];
+animals2.push("Cow");
+console.log(animals2);
 
-  let lessThan30 = nums.filter((n) => n > 30);
+animals2.pop();
+console.log(animals2);
 
-  console.log(lessThan30);
-}
-nums();
+animals2.unshift("Ant");
+console.log(animals2);
 
-// exercise (4)
+animals2.shift();
+console.log(animals2);
 
-function removeGreen() {
-  let mix = [true, "green", 22, "tree", "green", false];
+let fruits2 = ["Apple", "Orange", "Mango", "Banana"];
 
-  let removeGreen = mix.filter((n) => n !== "green");
+console.log(fruits2.indexOf("Mango"));
 
-  console.log(removeGreen);
-}
-removeGreen();
+console.log(fruits2.splice(3, 1));
+console.log(fruits2);
 
-// exercise (5)
+let fruits3 = ["Apple", "Orange", "Mango"];
 
-function discountFormula() {
-  let originalPrice = [1000, 1200, 2000, 2500, 3000, 4500];
-
-  return originalPrice.map((n) => n - (n * 20) / 100);
-}
-console.log(discountFormula());
-
-// exercise (6)
-
-function choosePrices() {
-  let discountPrices = discountFormula();
-
-  let choosePrices = discountPrices.filter((n) => n <= 2000);
-
-  console.log(choosePrices);
-}
-choosePrices();
+console.log(fruits3.join(", "));
