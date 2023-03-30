@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+    <style>
+      .wrap {
+        position: relative;
+        width: 1000px;
+        margin: 20px auto;
+      }
+      .wrap button {
+        position: absolute;
+        top: 42%;
+        cursor: pointer;
+      }
+
+      #prev {
+        left: 20px;
+      }
+      #next {
+        right: 20px;
+      }
+
+      .box {
+        height: 300px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 250px;
+        color: white;
+      }
+
+      #box1 {
+        background: blueviolet;
+      }
+      #box2 {
+        background: orangered;
+        display: none;
+      }
+      #box3 {
+        background: teal;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <button id="prev">&laquo;</button>
+      <button id="next">&raquo;</button>
+      <div class="box" id="box1">Box 1</div>
+      <div class="box" id="box2">Box 2</div>
+      <div class="box" id="box3">Box 3</div>
+    </div>
+
+    <script>
+      document.querySelector("#prev").onclick = prev;
+      document.querySelector("#next").onclick = next;
+
+      var pos = 1;
+
+      function prev() {
+        document.querySelector("#box" + pos).style.display = "none";
+        pos--;
+        if (pos < 1) pos = 3;
+        document.querySelector("#box" + pos).style.display = "block";
+      }
+
+      function next() {
+        document.querySelector("#box" + pos).style.display = "none";
+        pos++;
+        if (pos > 3) pos = 1;
+        document.querySelector("#box" + pos).style.display = "block";
+      }
+    </script>
+  </body>
+</html>

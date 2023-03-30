@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1</title>
+    <style>
+      button {
+        cursor: pointer;
+        margin: 20px;
+      }
+
+      #overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+
+      #dialog {
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 50%;
+        text-align: center;
+        border: 2px solid red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Button</button>
+
+    <div id="overlay"></div>
+    <div id="dialog">Lorem ipsum dolor sit amet consectetur.</div>
+
+    <script>
+      document.querySelector("button").onclick = show;
+      document.querySelector("#overlay").onclick = hide;
+
+      function show() {
+        document.querySelector("#overlay").style.display = "block";
+        document.querySelector("#dialog").style.display = "block";
+      }
+      function hide() {
+        document.querySelector("#overlay").style.display = "none";
+        document.querySelector("#dialog").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
