@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>What is Apple's Color</h1>
+    <label for="blue">
+      <input type="radio" id="blue" name="colors" />
+      Blue
+    </label>
+    <br />
+    <label for="red">
+      <input type="radio" id="red" name="colors" />
+      Red
+    </label>
+    <br />
+    <label for="green">
+      <input type="radio" id="green" name="colors" />
+      Green
+    </label>
+    <br /><br />
+    <button>Submit</button>
+
+    <script>
+      function checkAnswer() {
+        let answer = document.querySelector("#red").value;
+        console.log(answer);
+      }
+    </script>
+  </body>
+</html>
