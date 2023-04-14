@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8</title>
+    <style>
+      p {
+        color: red;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="userpassword">User Password</label>
+    <input type="password" id="userpassword" />
+    <br /><br />
+    <button onclick="checkPassword()">Submit</button>
+    <p>Password has at least 8 characters</p>
+
+    <script>
+      function checkPassword() {
+        let password = document.querySelector("#userpassword").value;
+        if (password.length < 8) {
+          document.querySelector("p").style.display = "block";
+        } else {
+          document.querySelector("p").style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
