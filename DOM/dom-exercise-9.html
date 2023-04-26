@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9</title>
+  </head>
+  <body>
+    <ul id="myList"></ul>
+
+    <button onclick="sortList()">Sort List</button>
+
+    <script>
+      let fruitsArray = ["Orange", "Banana", "Cherry", "Apple", "Mango"];
+      displayFruits(fruitsArray);
+
+      function sortList() {
+        clearList();
+        let sortedFruits = fruitsArray.sort();
+        displayFruits(sortedFruits);
+      }
+
+      function displayFruits(fruitItems) {
+        for (fruitItem of fruitItems) {
+          let liElement = document.createElement("li");
+          liElement.textContent = fruitItem;
+          document.querySelector("#myList").appendChild(liElement);
+        }
+      }
+
+      function clearList() {
+        let ulElement = document.querySelector("#myList");
+        while (ulElement.firstChild) {
+          ulElement.removeChild(ulElement.firstChild);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #correct {
+        display: none;
+      }
+      #wrong {
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <h1>What is Apple's Color</h1>
     <label for="blue">
-      <input type="radio" id="blue" name="colors" />
+      <input type="radio" id="blue" name="colors" value="blue" />
       Blue
     </label>
     <br />
     <label for="red">
-      <input type="radio" id="red" name="colors" />
+      <input type="radio" id="red" name="colors" value="red" />
       Red
     </label>
     <br />
     <label for="green">
-      <input type="radio" id="green" name="colors" />
+      <input type="radio" id="green" name="colors" value="green" />
       Green
     </label>
     <br /><br />
-    <button>Submit</button>
+    <button onclick="checkAnswer()">Submit</button>
+
+    <p id="correct">Your Answer Is Correct</p>
+    <p id="wrong">Your Answer Is Wrong</p>
 
     <script>
       function checkAnswer() {
-        let answer = document.querySelector("#red").value;
-        console.log(answer);
+        const selectedColor = document.querySelector(
+          'input[name="colors"]:checked'
+        ).value;
+        if (selectedColor === "red") {
+          document.querySelector("#correct").style.display = "block";
+        } else {
+          document.querySelector("#wrong").style.display = "block";
+        }
       }
     </script>
   </body>
