@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+  </head>
+  <body>
+    <label for="age-input">Age</label>
+    <input type="number" id="age-input" placeholder="Enter your age" />
+    <button onclick="showAge()">OK</button>
+    <p>Your age is: <span id="age-result"></span></p>
+
+    <script>
+      function showAge() {
+        let age = document.querySelector("#age-input").value;
+        document.querySelector("#age-result").textContent = age;
+        showLog(age);
+      }
+
+      function showLog(message) {
+        console.log(`Age is : ${message}`);
+      }
+    </script>
+  </body>
+</html>

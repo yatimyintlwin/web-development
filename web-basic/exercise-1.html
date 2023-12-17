@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Word</title>
+  </head>
+  <body>
+    <h1 id="student-name"></h1>
+    <input id="username" type="text" />
+    <script>
+      let studentName = "Mg Mg";
+      document.querySelector("#student-name").textContent = studentName;
+      document.querySelector("#username").value = studentName;
+
+      let username = document.querySelector("#username").value;
+      console.log("username is: " + username);
+
+      console.log(document.querySelector("#student-name").textContent);
+    </script>
+  </body>
+</html>
